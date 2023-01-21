@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FavIcon -->
+    <link rel="shortcut icon" href="./Images/song.png" type="image/x-icon" />
+
+    <!-- Title -->
+    <title>Song Monk - Let's music</title>
+
+    <!-- CSS-->
+    <link rel="stylesheet" href="./index.css" />
+    <!-- CSS Header -->
+    <link rel="stylesheet" href="./Style/header.css" />
+    <!-- CSS Main -->
+    <link rel="stylesheet" href="./Style/main.css" />
+    <!-- CSS Main Search -->
+    <link rel="stylesheet" href="./Style/mainSearch.css" />
+    <!-- CSS Footer -->
+    <link rel="stylesheet" href="./Style/footer.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <!-- Logo -->
+        <h1><img src="./Images/song.png" alt="Logo" />SongMonk</h1>
+        <!-- Nav Items -->
+        <ul class="first-ul">
+          <li id="home"><img src="./Images/home.png" alt="home" />Home</li>
+          <li id="search">
+            <img src="./Images/search.png" alt="search" />Search
+          </li>
+        </ul>
+        <hr />
+      </nav>
+    </header>
+    <main>
+      <!-- User Details -->
+      <nav id="user">
+        <button id="login">Login</button>
+      </nav>
+      <!-- Search Box for Search Songs-->
+      <div class="searchBox">
+        <span class="box">
+          <img src="./Images/searchBar.png" alt="" />
+          <input
+            type="text"
+            name="text"
+            id="text"
+            onkeyup="searchFun()"
+            placeholder="What do you want to listen to?"
+          />
+        </span>
+
+        <p></p>
+        <!-- Search Song List -->
+        <div id="searchSongList"></div>
+      </div>
+      <!-- Like Box -->
+      <div class="likeBox">
+        <!-- Like Song List -->
+        <div id="likeSongList"></div>
+      </div>
+      <!-- All Song Container -->
+      <div class="container">
+        <!-- Greet the User -->
+        <h1></h1>
+        <!-- Recent Played Song -->
+        <div class="song-list">
+          <button class="pre-btn" title="btn">
+            <img src="./Images/nxt.png" alt="" />
+          </button>
+          <button class="nxt-btn" title="btn">
+            <img src="./Images/nxt.png" alt="" />
+          </button>
+          <h3>Recently Played</h3>
+          <div id="recent"></div>
+        </div>
+
+        <!-- Best Artists-->
+        <div class="song-list">
+          <button class="pre-btn" title="btn">
+            <img src="./Images/nxt.png" alt="" />
+          </button>
+          <button class="nxt-btn" title="btn">
+            <img src="./Images/nxt.png" alt="" />
+          </button>
+          <h3>Best of Artists</h3>
+          <div id="recent"></div>
+        </div>
+
+        <!-- Best Romantic Song -->
+        <div class="song-list">
+          <button class="pre-btn" title="btn">
+            <img src="./Images/nxt.png" alt="" />
+          </button>
+          <button class="nxt-btn" title="btn">
+            <img src="./Images/nxt.png" alt="" />
+          </button>
+          <h3>Romantic Songs</h3>
+          <div id="recent"></div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <!-- Details of the Song -->
+      <div id="details">
+        <img src="" alt="" id="img" />
+        <div class="marquee">
+          <marquee width="150px" direction="right" scrollamount="3"></marquee>
+          <marquee width="150px" direction="right" scrollamount="3"></marquee>
+        </div>
+      </div>
+      <!-- Operate Song -->
+      <div id="operate">
+        <!-- Upper Pportion -->
+        <div class="up">
+          <!-- Previous Button -->
+          <img src="./Songs/prev.png" alt="prev" id="prev" />
+          <!-- Play/Pause Button -->
+          <img src="./Songs/pause.png" alt="" id="play" />
+          <!-- Next Button -->
+          <img src="./Songs/next.png" alt="next" id="next" />
+        </div>
+        <!-- Lower Portion -->
+        <div class="down">
+          <p id="CT">00.00</p>
+          <input
+            type="range"
+            name=""
+            id="progressBar"
+            value="0"
+            min="0"
+            max="100"
+            class="slider"
+          />
+          <p id="TT">00.00</p>
+        </div>
+      </div>
+      <!-- Sound Operate -->
+      <div id="sound">
+        <img src="./Songs/music.gif" alt="music" id="musicBar" />
+        <!-- Audio Sound Operate -->
+        <div id="mute">
+          <img src="./Images/audio.png" alt="" />
+          <input type="range" value="100" name="audio" id="slide2" />
+        </div>
+      </div>
+    </footer>
+  </body>
+  <!-- JS -->
+  <script src="./index.js"></script>
+  <!-- MusicList JS -->
+  <script src="./Script/musicList.js"></script>
+  <!-- Music JS -->
+  <script src="./Script/music.js"></script>
+  <!-- SoundOperate JS -->
+  <script src="./Script/soundOperate.js"></script>
+  <!-- Greet JS -->
+  <script src="./Script/greet.js"></script>
+  <!-- Login JS -->
+  <script src="./Script/login.js"></script>
+  <!-- Search JS -->
+  <script src="./Script/search.js"></script>
+</html>

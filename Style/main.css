@@ -1,0 +1,226 @@
+/* Main */
+main {
+    height: 90vh;
+    overflow: hidden;
+    overflow-y: auto;
+    background: linear-gradient(to bottom, rgba(24, 24, 24, 0.897), #121212);
+}
+
+/* Main NavBar */
+main nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    background-color: #0000003a;
+    padding-bottom: 10px;
+    z-index: 1;
+}
+
+/* Main Navbar ListItem after Login */
+main nav li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-right: 20px;
+    padding: 5px 10px;
+    background: #000000;
+    border-radius: 30px;
+    font-size: 1.02rem;
+    color: whitesmoke;
+    font-weight: 400;
+    box-shadow: rgba(27, 27, 27, 0.315) 0px 8px 10px;
+    cursor: pointer;
+}
+
+/* Main Navbar ListItem Image after Login */
+main nav li img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+/* Main Navbar Login Button */
+main nav #login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-right: 20px;
+    background: #0c0c0c;
+    border-radius: 30px;
+    padding: 5px 25px;
+    color: white;
+    border-style: none;
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-align: center;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.5s ease-in-out;
+    text-transform: uppercase;
+    border: 0.1px solid white;
+}
+
+/* Login Button Hover Effect */
+#login:hover {
+    opacity: 1;
+}
+
+/* Main Container */
+main .container {
+    margin-left: 240px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    color: rgb(238, 238, 238);
+}
+
+/* Greet H1 */
+main .container h1{
+    margin-bottom: 20px;
+}
+
+/* Main Container SongList Div */
+.song-list {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+
+/* Recent Box for Song*/
+#recent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+/* Slider Next & Previous Button */
+.pre-btn,
+.nxt-btn {
+    position: absolute;
+    top: 0;
+    width: 5%;
+    height: 100%;
+    z-index: 2;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+/* Slider Previous Button */
+.pre-btn {
+    left: -17px;
+    background: linear-gradient(to right, #0c111b00 0%, #0c111b00);
+}
+
+/* Slider Next Button */
+.nxt-btn {
+    right: -17px;
+    background: linear-gradient(to left, #0c111b00 0%, #0c111b00);
+}
+
+/* Rotate next btn for previous button */
+.pre-btn img {
+    transform: rotate(180deg);
+}
+
+/* Previous & Next Button Img */
+.pre-btn img,
+.nxt-btn img {
+    width: 40px;
+    height: 40px;
+    opacity: 0.2;
+}
+
+/* Hover Effect Button */
+.pre-btn:hover img,
+.nxt-btn:hover img {
+    opacity: 1;
+}
+
+/* Song Outer Box */
+.outer {
+    position: relative;
+    width: 200px;
+    height: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: start;
+    padding: 15px 0px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: #181818;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.outer:hover {
+    background-color: #202020;
+}
+
+/* Song Inner Image */
+.inner {
+    width: 170px;
+    height: 170px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.521) 0px 2px 4px 0px, rgba(0, 0, 0, 0.596) 0px 2px 16px 0px;
+}
+
+/* Play & Pause Button */
+#on {
+    position: absolute;
+    width: 50px;
+    align-self: flex-end;
+    padding-right: 20px;
+    cursor: pointer;
+    transform: scale(0);
+    transition: all 0.3s ease-in-out;
+    opacity: 0.8;
+}
+
+.outer:hover #on {
+    transform: scale(1);
+}
+
+#on:hover {
+    opacity: 1;
+}
+
+/* Song Box Title */
+.outer h4 {
+    display: inline-block;
+    align-self: flex-start;
+    width: 170px;
+    height: 36px;
+    margin: 5px 15px;
+    color: rgb(218, 218, 218);
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/* Song Box Description */
+.outer span {
+    display: inline-block;
+    align-self: flex-start;
+    margin: 5px 15px;
+    color: rgb(167, 165, 165);
+    width: 170px;
+    height: 36px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}

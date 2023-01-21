@@ -1,0 +1,71 @@
+/* Header */
+header {
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    background-color: rebeccapurple;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    color: white;
+    background: linear-gradient(to bottom, rgb(24, 23, 23), rgb(0, 0, 0), rgb(1, 32, 25));
+    z-index: 2;
+}
+
+/* Nav Logo */
+nav h1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+/* Nav Logo Img */
+nav h1 img {
+    width: 45px;
+}
+
+/* Nav Item Img */
+nav ul li img {
+    width: 28px;
+    padding-right: 10px;
+}
+
+/* Nav Ul */
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+/* Nav Ul Li */
+nav ul li {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 400;
+    background: linear-gradient(65deg, rgb(3, 3, 73), rgb(173, 12, 173));
+    width: 170px;
+    margin: 5px;
+    border-radius: 20px;
+    transition: all 0.2s ease-in-out;
+}
+
+/* Hover Effect */
+nav ul li:hover {
+    box-shadow: rgba(56, 121, 187, 0.247) 0px 8px 24px;
+    font-size: 1.02rem;
+}
+
+/* Line */
+nav hr {
+    margin-top: 20px;
+    border: 0.1px solid rgba(0, 140, 255, 0.199);
+}

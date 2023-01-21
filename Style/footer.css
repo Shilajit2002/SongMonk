@@ -1,0 +1,201 @@
+/* Footer */
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: #181818;
+    box-shadow: 1px 1px 4px rgb(75, 75, 75);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    z-index: 3;
+}
+
+/* Details box of the song */
+#details {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Details Img for Song Cover */
+#details img {
+    width: 60px;
+    height: 55px;
+    border-radius: 5px;
+    box-shadow: rgba(62, 63, 63, 0.2) 0px 8px 24px;
+}
+
+/* Marquee */
+#details .marquee {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Select Marquee First Child */
+#details marquee:nth-child(1) {
+    margin: 0 10px;
+    font-size: 1rem;
+    color: beige;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    text-align: start;
+}
+
+/* Select Marquee Second Child */
+#details marquee:nth-child(2) {
+    margin: 0 10px;
+    font-size: 1rem;
+    color: beige;
+    font-weight: 200;
+    letter-spacing: 0.8px;
+    text-transform: capitalize;
+    text-align: start;
+}
+
+/* Operate Box */
+#operate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 500px;
+}
+
+/* Operate Up Box */
+#operate .up {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 300px;
+}
+
+/* Operate Up Image */
+#operate .up img {
+    width: 28px;
+    margin: 2px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    opacity: 0.7;
+}
+
+#operate .up #play {
+    width: 35px;
+}
+
+#operate .up img:hover {
+    opacity: 1;
+}
+
+/* Operate Down Box */
+#operate .down {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 500px;
+    color: white;
+}
+
+/* Sound Range Slider */
+.slider {
+    -webkit-appearance: none;
+    width: 400px;
+    height: 6px;
+    background: #111;
+    outline: none;
+    opacity: 0.7;
+    transition: all 0.5s ease-in-out;
+    border-radius: 15px;
+    margin: 10px;
+    overflow: hidden;
+    box-shadow: inset 0 0 5px rgb(23, 23, 24);
+    cursor: pointer;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    background: #ffffff;
+    box-shadow: -400px 0 0 395px #ff008c;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+/* Sound Box */
+#sound {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Sound Box Img */
+#sound img {
+    width: 50px;
+    margin: 0px 15px;
+    border-radius: 5px;
+    box-shadow: rgba(157, 15, 185, 0.13) 0px 8px 24px;
+}
+
+/* Music Bar Gif */
+#musicBar {
+    opacity: 0;
+    transition: all 1s ease-in;
+}
+
+/* Mute Box */
+#mute {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Mute Logo */
+#mute img {
+    width: 20px;
+    margin: 0px 10px;
+}
+
+/* Mute Slider */
+#slide2 {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 2px;
+    background: #ffffff;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#slide2:hover {
+    opacity: 1;
+}
+
+#slide2::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 20px;
+    background: #00ccff;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: rgba(135, 44, 163, 0.637) 0px 7px 29px 0px;
+}
+
+#slide2::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #00f7ff;
+    cursor: pointer;
+}

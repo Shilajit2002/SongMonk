@@ -1,0 +1,130 @@
+main .searchBox {
+    margin-left: 240px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    padding: 20px;
+    display: none;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.searchBox .box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: fit-content;
+    background-color: #ffffff;
+    border-radius: 50px;
+    box-shadow: rgba(0, 0, 0, 0.486) 0px 5px 15px;
+}
+
+.searchBox .box img {
+    width: 35px;
+    padding: 5px;
+}
+
+.searchBox .box input[type="text"] {
+    width: 300px;
+    padding: 5px;
+    margin: 5px;
+    font-size: 1rem;
+    color: rgb(18, 58, 73);
+    border-style: none;
+    background-color: #ffffff;
+    font-weight: 600;
+    border-radius: 50px;
+}
+
+.searchBox .box input[type="text"]:focus {
+    outline: none !important;
+}
+
+#searchSongList {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.searchBox p {
+    color: white;
+    padding: 30px 20px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+/* Song Outer Box */
+.outer1 {
+    position: relative;
+    width: 200px;
+    height: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: start;
+    padding: 15px 0px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: #181818;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.outer1:hover {
+    background-color: #202020;
+}
+
+/* Song Inner Image */
+.inner {
+    width: 170px;
+    height: 170px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.521) 0px 2px 4px 0px, rgba(0, 0, 0, 0.596) 0px 2px 16px 0px;
+}
+
+/* Play & Pause Button */
+#on1 {
+    position: absolute;
+    width: 50px;
+    align-self: flex-end;
+    padding-right: 20px;
+    cursor: pointer;
+    transform: scale(0);
+    transition: all 0.3s ease-in-out;
+    opacity: 0.8;
+}
+
+.outer1:hover #on1 {
+    transform: scale(1);
+}
+
+#on1:hover {
+    opacity: 1;
+}
+
+/* Song Box Title */
+.outer1 h4 {
+    display: inline-block;
+    align-self: flex-start;
+    width: 170px;
+    height: 36px;
+    margin: 5px 15px;
+    color: rgb(218, 218, 218);
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/* Song Box Description */
+.outer1 span {
+    display: inline-block;
+    align-self: flex-start;
+    margin: 5px 15px;
+    color: rgb(167, 165, 165);
+    width: 170px;
+    height: 36px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
